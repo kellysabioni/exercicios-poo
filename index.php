@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
 </head>
 <body>
-    <h1>Exercício 01</h1>
+    <h1>Exercício 02</h1>
     <hr>
 <?php
 require_once 'src/Livro.php';
 
-$livro1 = new Livro();
-$livro2 = new Livro();
+$livro1 = new Livro("A Guerra dos Tronos", "George R. R. Martin", 694);
+$livro2 = new Livro("A Seleção", "Kiera Cass", 464);
 
-$livro1->setTitulo("A Guerra dos Tronos");
-$livro1->setAutor("George R. R. Martin");
-$livro1->setPaginas(694);
-
-$livro2->setTitulo("A Seleção");
-$livro2->setAutor("Kiera Cass");
-$livro2->setPaginas(464);
 ?>
 
     <p><i>Faça as chamadas e testes nesta página</i></p>
