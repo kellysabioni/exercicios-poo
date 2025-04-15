@@ -5,7 +5,7 @@ class Livro {
     private string $autor;
     private int $paginas;
 
-    public function __construct($titulo, $autor, $paginas)
+    public function __construct(string $titulo,string $autor,int $paginas)
     {
         $this->setTitulo($titulo);
         $this->setAutor($autor);
