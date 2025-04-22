@@ -1,5 +1,5 @@
 <?php 
-class Programacao extends Tecnico {
+final class Programacao extends Tecnico {
     
     private string $linguagem;
     

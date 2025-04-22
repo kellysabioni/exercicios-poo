@@ -22,7 +22,7 @@
     
     $livro3 = new Tecnico("A Seleção", "Kiera Cass", Formato::DIGITAL);
     
-    $livro5 = new Programacao("TESTE TODOS", "TUDO JUNTO", Formato::DIGITAL, "INGLES");
+    $livro5 = new Programacao("TESTE TODOS", "TUDO JUNTO", Formato::FISICO, "PHP");
     ?>
 
     <p><i>Faça as chamadas e testes nesta página</i></p>
@@ -37,15 +37,15 @@
     <ul>
         <li>Titulo Tecnico: <?= $livro3->getTitulo(); ?></li>
         <li>Autor Tecnico: <?= $livro3->getAutor(); ?></li>
-        <li>Genero Tecnico: <?= $livro3->getFormato()->name; ?></li>
+        <li>Formato Tecnico: <?= $livro3->getFormato()->name; ?></li>
         
     </ul>
     
     <ul>
-        <li>Titulo todos: <?= $livro5->getTitulo(); ?></li>
-        <li>Autor todos: <?= $livro5->getAutor(); ?></li>
-        <li>Genero todos: <?= $livro5->getFormato()->name; ?></li>
-        <li>Linguagem todos: <?= $livro5->getLinguagem() ; ?></li>
+        <li>Titulo Programação: <?= $livro5->getTitulo(); ?></li>
+        <li>Autor Programação: <?= $livro5->getAutor(); ?></li>
+        <li>Formato Tecnico: <?= $livro5->getFormato()->name; ?></li>
+        <li>Linguagem Programação: <?= $livro5->getLinguagem() ; ?></li>
 
     </ul>
 
