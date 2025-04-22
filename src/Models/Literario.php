@@ -7,7 +7,7 @@ class Literario extends Livro {
     {
         parent::__construct($titulo,$autor);
 
-        $this->setGenero(Genero::AVENTURA);
+        $this->setGenero($genero);
     }
 
     private function setGenero(Genero $genero): void {

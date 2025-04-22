@@ -7,7 +7,7 @@ class Tecnico extends Livro {
     {
         parent::__construct($titulo,$autor);
 
-        $this->setFormato(Formato::DIGITAL);
+        $this->setFormato($formato);
     }
 
     private function setFormato(Formato $formato): void {

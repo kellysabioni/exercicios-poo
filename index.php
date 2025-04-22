@@ -16,24 +16,36 @@
     require_once 'src/Models/Livro.php';
     require_once 'src/Models/Literario.php';
     require_once 'src/Models/Tecnico.php';
+    require_once 'src/Models/Programacao.php';
 
     $livro1 = new Literario("A Guerra dos Tronos", "George R. R. Martin", Genero::AVENTURA);
-    $livro2 = new Literario("A Seleção", "Kiera Cass", Genero::AVENTURA);
-
+    
+    $livro3 = new Tecnico("A Seleção", "Kiera Cass", Formato::DIGITAL);
+    
+    $livro5 = new Programacao("TESTE TODOS", "TUDO JUNTO", Formato::DIGITAL, "INGLES");
     ?>
 
     <p><i>Faça as chamadas e testes nesta página</i></p>
 
     <ul>
-        <li>Titulo: <?= $livro1->getTitulo(); ?></li>
-        <li>Autor: <?= $livro1->getAutor(); ?></li>
-        <li>Genero: <?= $livro1->getGenero()->name; ?></li>
+        <li>Titulo Literário: <?= $livro1->getTitulo(); ?></li>
+        <li>Autor Literário: <?= $livro1->getAutor(); ?></li>
+        <li>Genero Literário: <?= $livro1->getGenero()->name; ?></li>
 
     </ul>
+     
     <ul>
-        <li>Titulo: <?= $livro2->getTitulo(); ?></li>
-        <li>Autor: <?= $livro2->getAutor(); ?></li>
-        <li>Genero: <?= $livro2->getGenero()->name; ?></li>
+        <li>Titulo Tecnico: <?= $livro3->getTitulo(); ?></li>
+        <li>Autor Tecnico: <?= $livro3->getAutor(); ?></li>
+        <li>Genero Tecnico: <?= $livro3->getFormato()->name; ?></li>
+        
+    </ul>
+    
+    <ul>
+        <li>Titulo todos: <?= $livro5->getTitulo(); ?></li>
+        <li>Autor todos: <?= $livro5->getAutor(); ?></li>
+        <li>Genero todos: <?= $livro5->getFormato()->name; ?></li>
+        <li>Linguagem todos: <?= $livro5->getLinguagem() ; ?></li>
 
     </ul>
 
