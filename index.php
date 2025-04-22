@@ -15,6 +15,7 @@
     require_once 'src/Enums/Formato.php';
     require_once 'src/Models/Livro.php';
     require_once 'src/Models/Literario.php';
+    require_once 'src/Models/Tecnico.php';
 
     $livro1 = new Literario("A Guerra dos Tronos", "George R. R. Martin", Genero::AVENTURA);
     $livro2 = new Literario("A Seleção", "Kiera Cass", Genero::AVENTURA);
